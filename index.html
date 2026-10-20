@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskVault - Ibrahim Musa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <h2>Task Assesment Project</h2>
+      <small>by Ibrahim Musa Opeyemi</small>
+    </nav>
+    <div class="top-cards">
+      <div class="card"><h3 id="pending">0</h3><span>Pending</span></div>
+      <div class="card green"><h3 id="done">0</h3><span>Done</span></div>
+      <div class="card dark"><h3 id="all">0</h3><span>Total</span></div>
+    </div>
+    <div class="form-box">
+      <input type="text" id="taskText" placeholder="Enter new task...">
+      <div class="form-row">
+        <select id="priority">
+          <option value="low">Low Priority</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High Priority</option>
+        </select>
+        <input type="date" id="dueDate">
+        <button id="addTaskBtn">Add +</button>
+      </div>
+      <p id="msg"></p>
+    </div>
+    <input type="text" id="searchBox" placeholder="Search my tasks...">
+    <div class="filter-row">
+      <button class="f-btn active" data-f="all">All Tasks</button>
+      <button class="f-btn" data-f="pending">Pending</button>
+      <button class="f-btn" data-f="done">Completed</button>
+    </div>
+    <ul id="list"></ul>
+    <p id="noTask">You have no tasks yet, Ibrahim. Start by adding one</p>
+    <footer>Built by Ibrahim Musa Opeyemi | CODAR Frontend Internship Assesment 2026</footer>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
